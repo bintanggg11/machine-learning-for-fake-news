@@ -6,8 +6,8 @@ from Sastrawi.StopWordRemover.StopWordRemoverFactory import StopWordRemoverFacto
 from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 
 # Memuat model dan vectorizer yang telah disimpan
-model_rf = joblib.load('./Model/model_rf.joblib')
-vct = joblib.load('./Model/tfidf_vectorizer.pkl')
+model_rf = joblib.load('model_rf.joblib')
+vct = joblib.load('tfidf_vectorizer.pkl')
 
 def wardrop(text):
     text = text.lower()
