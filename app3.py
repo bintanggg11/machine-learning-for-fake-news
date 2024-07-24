@@ -161,12 +161,22 @@ def about_page():
     col1, col2 = st.columns(2)
 
     with col1:
-        if st.button('LinkedIn'):
-            webbrowser.open_new_tab('https://www.linkedin.com/in/rizky-bintang-yudhistira/')
+        st.markdown("""
+        <a href="https://www.linkedin.com/in/rizky-bintang-yudhistira/" target="_blank">
+            <button style="width: 100%; height: 40px; background-color: #0077b5; color: white; border: none; border-radius: 5px;">
+                LinkedIn
+            </button>
+        </a>
+        """, unsafe_allow_html=True)
 
     with col2:
-        if st.button('Instagram'):
-            webbrowser.open_new_tab('https://www.instagram.com/rizky_yudhistiraaa/')
+        st.markdown("""
+        <a href="https://www.instagram.com/rizky_yudhistiraaa/" target="_blank">
+            <button style="width: 100%; height: 40px; background-color: #C13584; color: white; border: none; border-radius: 5px;">
+                Instagram
+            </button>
+        </a>
+        """, unsafe_allow_html=True)
 
 # Menu Navigasi
 pages = {
